@@ -6,7 +6,7 @@ function App() {
     <div className="loginBox">
       <p className="header">Sign in to your account</p>
       <Input className="input-field emailInputField" placeholder="Email address" />
-      <Input className="input-field passwordInputField" placeholder="Password" />
+      <Input className="input-field passwordInputField" type="password" placeholder="Password" />
       <div className="other">
         <Label check>
           <Input type="checkbox" />

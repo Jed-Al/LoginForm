@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Input, Label, Button } from "reactstrap"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="loginBox">
+      <p className="header">Sign in to your account</p>
+      <Input className="input-field emailInputField" placeholder="Email address" />
+      <Input className="input-field passwordInputField" placeholder="Password" />
+      <div className="other">
+        <Label check>
+          <Input type="checkbox" />
+          <span className="checkbox-label">Remember me</span>
+        </Label>
+        <Label className="forgot">Forgot password?</Label>
+      </div>
+      <Button color="primary" className="signInButton">Sign in</Button>
     </div>
   );
 }
